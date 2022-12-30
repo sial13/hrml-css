@@ -33,7 +33,7 @@ header>.container>.row{
     margin: 0px 0px 0px 27px;
 }
 .row button:hover{
-    background-color: gray;
+    background-color: #c0bdbd;;
     cursor:pointer;
 }
 .row{
@@ -99,6 +99,9 @@ h2{
 }
 .card>p{
     margin: 0;
+}
+.card{
+    margin-bottom: 36px;
 }
 .cost {
     font: 14px Roboto, sans-serif;
@@ -274,4 +277,61 @@ select{
 .filter>.container>ul>li>a{
     text-decoration: none;
     color: #626262;
+}
+.snacks>.container>h1{
+    font-size: 22px;
+    line-height: 34px;
+    font-weight: normal;
+    margin: 56px 0px 32px 0px;
+}
+@media (max-width: 767px){
+.snacks>.container>h1 {
+    margin: 111px 0px 12px 0px;
+    text-align: center;
+}
+}
+.dish1{
+    border: 1px solid rgba(117, 117, 117, 0.2);
+    border-radius: 2px;
+    position: relative;
+    height: 160px;
+    margin-bottom: 49px;
+    padding-left: 16px;
+}
+.dish1:hover{
+    background-color: #c0bdbd;
+}
+.dish1>img{
+    position: absolute;
+    right: 0;
+    height: 100%;
+}
+.dish_name {
+    font-size: 16px;
+    line-height: 24px;
+    color: #1D1D1D;
+}
+@media (max-width: 767px){
+.dish_name {
+    font-size: 14px;
+    margin: 0;
+}
+}
+.dish_trait {
+    font-size: 13px;
+    line-height: 21px;
+    color: #626262;
+}
+@media (max-width: 767px){
+.dish_trait {
+    margin: 4px 0px 0px 0px;
+}
+}
+.dish_cost{
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 500;
+    color: #1D1D1D;
+    position: absolute;
+    bottom: 1px;
 }
