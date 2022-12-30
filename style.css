@@ -10,6 +10,7 @@ header{
     width: 100%;
     position: fixed;
     background-color: #fff;
+    z-index: 10222;
     box-shadow: 0px 10px 16px rgb(38 38 38 / 16%);
 }
 header>.container{
@@ -171,4 +172,106 @@ select{
     position: fixed;
     bottom: 24px;
     right: 16px;
+}
+/*second page*/
+.hero{
+    padding: 72px 0 0 0;
+}
+.hero_bg {
+    width: 100%;
+    height: 364px;
+    background: url(img/fonxl.png);
+    background-size: cover;
+}
+.hero1{
+    background-color: #fff;
+    border: none;
+    border-radius: 2px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 16px rgb(117 117 117 / 20%);
+    position: relative;
+    top: 80px;
+    bottom: 80px;
+}
+.hero1>h1{
+    font-size: 36px;
+    font-style: normal;
+    line-height: 42px;
+    text-align: center;
+    width: 100%;
+    margin: 38px 0px 38px 0px
+}
+.hero_bg>.container>.row{
+    margin: 0;
+}
+.hero1>div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px 10% 38px 10%;
+}
+@media (max-width: 767px){
+    .hero1>div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0;
+    }
+}
+.hero1>div>p{
+    font-size: 14px;
+    color: #626262;
+}
+@media (max-width: 767px){
+.hero1>div>p {
+    margin: 16px;
+}
+}
+@media (max-width: 767px){
+.hero1>div>.wait {
+    margin-bottom: 24px;
+}
+}
+.hero1>div>.wait {
+    font-size: 13px;
+    line-height: 32px;
+    color: #fff;
+    width: 100px;
+    height: 32px;
+    background-color: #000;
+    border-radius: 16px;
+    text-align: center;
+}
+.filter{
+    height: 80px;
+    background: #FFFFFF;
+    border: 1px solid rgba(117, 117, 117, 0.2);
+    display: flex;
+    flex-direction: row;
+}
+@media (max-width: 767px){
+    .filter{
+        display: none;
+    }
+}
+.filter>.container {
+    padding: 0;
+}
+.filter>.container>ul{
+    padding: 0;
+}
+.filter>.container>ul>li{
+    list-style: none;
+
+    float: left;
+    padding-right: 40px;
+}
+.filter>.container>ul>li>a.selected{
+    color: #327430;
+}
+.filter>.container>ul>li>a{
+    text-decoration: none;
+    color: #626262;
 }
